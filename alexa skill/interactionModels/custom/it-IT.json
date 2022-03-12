@@ -1,0 +1,96 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "avvia projectwork gruppo tre",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "ciao",
+            "come stai",
+            "dì ciao",
+            "salutami",
+            "salutarmi"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "TaskOne",
+          "slots": [
+            {
+              "name": "inputPeriod",
+              "type": "AMAZON.CreativeWorkType"
+            },
+            {
+              "name": "inputDateOne",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "inputDateTwo",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "inputSymbol",
+              "type": "AMAZON.Corporation"
+            },
+            {
+              "name": "typeRequest",
+              "type": "AMAZON.CreativeWorkType"
+            }
+          ],
+          "samples": [
+            "Calcola {typeRequest} nel periodo {inputPeriod} tra il {inputDateOne} e {inputDateTwo} dell\u0027azienda {inputSymbol}",
+            "Calcola la {typeRequest} nel periodo {inputPeriod} tra il {inputDateOne} e {inputDateTwo} dell\u0027azienda {inputSymbol}",
+            "Calcola il {typeRequest} nel periodo {inputPeriod} tra il {inputDateOne} e {inputDateTwo} dell\u0027azienda {inputSymbol}"
+          ]
+        },
+        {
+          "name": "TaskTwo",
+          "slots": [
+            {
+              "name": "period",
+              "type": "AMAZON.DURATION"
+            },
+            {
+              "name": "date_one",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "date_two",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "symbol",
+              "type": "AMAZON.Corporation"
+            }
+          ],
+          "samples": [
+            "Calcola il trend nel periodo {period} tra il {date_one} e {date_two} dell\u0027azienda {symbol}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "18"
+}
