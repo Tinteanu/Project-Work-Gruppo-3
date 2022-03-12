@@ -1,7 +1,6 @@
 # Project Work #2
 
-by Sassano Matteo, Tinteanu Antonio and Yaroslav Myronchuk
-
+by Group 3 (Sassano Matteo, Tinteanu Antonio and Yaroslav Myronchuk)
 
 ## Request
 
