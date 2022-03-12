@@ -29,7 +29,14 @@ First of all we wrote the python code capable of extracting out of the API reque
 
 We use a token to determine the type of response we want from the API, either "Weekly" or "Monthly"
 
-
+    if inp_period == "settimanale":
+        period = "TIME_SERIES_WEEKLY"
+        token = "Weekly"
+    elif inp_period == "mensile":
+        period = "TIME_SERIES_MONTHLY"
+        token = "Monthly"
+    else:
+        return "Error period"
 
 We first cicle through every date present in the API data, and for every one we save the values of the five attributes, "*open*", "*high*", "*low*", "*close*" and "*volume*", in individual lists.
 
